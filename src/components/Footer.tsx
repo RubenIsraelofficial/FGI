@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Footer = () => {
     return (
@@ -60,7 +59,7 @@ const Footer = () => {
                     <p className="text-xs text-slate-400">© 2023 Fortis Global Insurance. All rights reserved.</p>
                     <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                        <span class="text-xs text-slate-400">Systems Operational</span>
+                        <span className="text-xs text-slate-400">Systems Operational</span>
                     </div>
                 </div>
             </div>
