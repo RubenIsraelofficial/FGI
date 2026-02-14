@@ -5,6 +5,7 @@ import RecoverySection from './components/RecoverySection';
 import CommunitySection from './components/CommunitySection';
 import ClaimsSection from './components/ClaimsSection';
 import Pricing from './components/Pricing';
+import Partners from './components/Partners';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Features />
       <RecoverySection />
+      <Partners />
       <CommunitySection />
       <ClaimsSection />
       <Pricing />
