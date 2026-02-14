@@ -19,7 +19,7 @@ const CommunitySection = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <img alt="Two Nigerian students studying together in a classroom setting" className="rounded-2xl shadow-lg w-full h-80 object-cover" data-alt="Students studying together" src="/assets/community-students.jpg.png" />
+                            <img alt="Two Nigerian students studying together in a classroom setting" className="rounded-2xl shadow-lg w-full h-80 object-cover" data-alt="Students studying together" src="/assets/community.png" />
                             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl max-w-xs">
                                 <div className="flex items-center gap-3">
                                     <div className="bg-gold/20 p-2 rounded-full text-gold-700 dark:text-gold">
