@@ -1,26 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import RecoverySection from './components/RecoverySection';
-import CommunitySection from './components/CommunitySection';
-import ClaimsSection from './components/ClaimsSection';
-import Pricing from './components/Pricing';
-import Partners from './components/Partners';
+import Home from './components/Home';
+import ProtectionDetails from './components/ProtectionDetails';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden min-h-screen">
-      <Navbar />
-      <Hero />
-      <Features />
-      <RecoverySection />
-      <Partners />
-      <CommunitySection />
-      <ClaimsSection />
-      <Pricing />
-      <Footer />
-    </div>
+    <Router>
+      <div className="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/protection-plans" element={<ProtectionDetails />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
