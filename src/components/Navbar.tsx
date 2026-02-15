@@ -11,6 +11,8 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    import { Link } from 'react-router-dom';
+
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-panel border-b border-gray-100 dark:border-gray-800' : 'bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,11 +28,11 @@ const Navbar = () => {
                         <a className="text-sm font-medium text-slate-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#">Support</a>
                     </div>
                     <div className="flex items-center gap-4">
-                        <a className="hidden sm:block text-sm font-semibold text-primary dark:text-primary-400" href="#">Log in</a>
-                        <a className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg hover:shadow-primary/30 flex items-center gap-2" href="#pricing">
+                        <Link className="hidden sm:block text-sm font-semibold text-primary dark:text-primary-400" to="/login">Log in</Link>
+                        <Link className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg hover:shadow-primary/30 flex items-center gap-2" to="/signup">
                             Get Protected
                             <span className="material-icons-outlined text-sm">arrow_forward</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

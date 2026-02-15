@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 const Hero = () => {
     return (
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
@@ -22,10 +24,10 @@ const Hero = () => {
                             We've simplified insurance. Get comprehensive Life, Health, Income, and Asset coverage in a single, transparent subscription.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-primary/30 flex items-center justify-center gap-3 group">
+                            <Link to="/signup" className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-primary/30 flex items-center justify-center gap-3 group">
                                 Start Coverage
                                 <span className="group-hover:translate-x-1 transition-transform material-icons-outlined">arrow_forward</span>
-                            </button>
+                            </Link>
                             <div className="flex items-center gap-3 px-6 py-4 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 shadow-sm">
                                 <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold">
                                     <span className="material-icons-outlined">verified</span>
